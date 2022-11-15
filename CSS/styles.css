@@ -21,31 +21,41 @@ font-family: 'Source Sans Pro', sans-serif;
 
 /*Header Start*/
 #HeaderImage {
-    background-image: url("../Assets/header.jpg");
-    background-repeat: no-repeat;
   width: auto;
   overflow: hidden;
   display: block;
   height: auto;
+  position: relative;
+  text-align: center;
   margin-bottom: 109px;
 }
 
 #HeaderImage img {
-    margin-top: -325px;
-    margin-bottom: -250px;
+  margin-top: -325px;
+  margin-bottom: -250px;
 }
 
 #HeaderTextBox {
-    margin-top: 25%;
-    margin-bottom: 25%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #HeaderTitle {
-    text-align: center;
-font: normal normal normal 45px/57px Dosis;
-letter-spacing: 0px;
-color: #E5FEFF;
-opacity: 1;
+  text-align: center;
+  font: normal normal normal 45px/57px Dosis;
+  letter-spacing: 0px;
+  color: #e5feff;
+  opacity: 1;
+}
+
+#HeaderText {
+  text-align: center;
+  font: normal normal normal 16px/20px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #e5feff;
+  opacity: 1;
 }
 
 /*Header End*/
@@ -100,9 +110,9 @@ opacity: 1;
 }
 
 #RoomsPic img {
-    margin-top: -200px;
-    margin-bottom: -250px;
-  }
+  margin-top: -200px;
+  margin-bottom: -250px;
+}
 /*Rooms End*/
 
 /*Packages Start*/
