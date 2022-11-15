@@ -1,0 +1,175 @@
+/*
+Google Font CSS Call:
+font-family: 'Dosis', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+/*NavBar Start*/
+
+/*NavBar End*/
+
+/*Header Start*/
+#HeaderImage {
+    margin-bottom: 109px;
+}
+/*Header End*/
+
+/*HamterParadise Start*/
+#HamsterParadise {
+    margin-bottom: 91px;
+}
+
+#HamsterParadisePic {
+    float: right;
+}
+
+#HamsterParadiseTitle {
+    text-align: left;
+    font: normal normal normal 35px/44px Dosis;
+    letter-spacing: 0px;
+    color: #1A1B26;
+    opacity: 1;
+    margin-bottom: 22px;
+}
+
+#HamsterParadiseText {
+    text-align: left;
+    font: normal normal normal 16px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #1A1B26;
+    opacity: 1;
+    max-width: 753px; 
+    word-wrap: break-word;
+}
+
+#HamsterParadiseIcon1 {
+    margin-right: 76px;
+}
+
+#HamsterParadiseIcon2 {
+    margin-right: 103px;
+}
+
+#HamsterParadiseIcon3 {
+}
+/*HamterParadise End*/
+
+/*Rooms Start*/
+#RoomsPic {
+    margin-bottom: 106.5px;
+}
+/*Rooms End*/
+
+/*Packages Start*/
+#Packages {
+    margin-bottom: 95px;
+}
+
+#PackagesTitle {
+    text-align: center;
+    font: normal normal normal 35px/44px Dosis;
+    letter-spacing: 0px;
+    color: #1A1B26;
+    opacity: 1;
+}
+
+#BeachWeddingPic {
+    float: right;
+}
+
+#BeachWeddingTitle {
+    text-align: left;
+    font: normal normal normal 25px/32px Dosis;
+    letter-spacing: 0px;
+    color: #1A1B26;
+    opacity: 1;
+}
+
+#BeachWeddingPrice {
+    text-align: left;
+    font: normal normal normal 16px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #1F51A8;
+    opacity: 1;
+}
+
+#BeachWeddingText {
+    text-align: left;
+    font: normal normal normal 16px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #1A1B26;
+    opacity: 1;
+}
+
+#FullBloomPic {
+    float: right;
+}
+
+#FullBloomTitle {
+    text-align: left;
+    font: normal normal normal 25px/32px Dosis;
+    letter-spacing: 0px;
+    color: #1A1B26;
+    opacity: 1;
+}
+
+#FullBloomPrice {
+    text-align: left;
+    font: normal normal normal 16px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #1F51A8;
+    opacity: 1;
+}
+
+#FullBloomText {
+    text-align: left;
+    font: normal normal normal 16px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #1A1B26;
+    opacity: 1;
+}
+
+#CheeseAndSeedTourPic {
+    float: right;
+}
+
+#CheeseAndSeedTourTitle {
+    text-align: left;
+    font: normal normal normal 25px/32px Dosis;
+    letter-spacing: 0px;
+    color: #1A1B26;
+    opacity: 1;
+}
+
+#CheeseAndSeedTourPrice {
+    text-align: left;
+    font: normal normal normal 16px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #1F51A8;
+    opacity: 1;
+}
+
+#CheeseAndSeedTourText {
+    text-align: left;
+    font: normal normal normal 16px/20px Source Sans Pro;
+    letter-spacing: 0px;
+    color: #1A1B26;
+    opacity: 1;
+}
+/*Packages End*/
+
+/*Amenities Start*/
+#Amenities {
+    margin-bottom: 101px;
+}
+/*Amenities End*/
+
+/*Reserve Start*/
+#Reserve {
+    margin-bottom: 101px;
+}
+/*Reserve End*/
+
+/*Contact Start*/
+
+/*Contact End*/
