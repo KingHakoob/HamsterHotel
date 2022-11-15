@@ -16,22 +16,22 @@
 
 <body>
     <!--Start NavBar-->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-light container-fluid">
+        <div class="container-fluid NavBar">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Overview</a>
+                        <a class="nav-link NavBarWords" aria-current="page" href="#">Overview</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Rooms</a>
+                        <a class="nav-link NavBarWords" href="#">Rooms</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Packages</a>
+                        <a class="nav-link NavBarWords" href="#">Packages</a>
                     </li>
                     <li class="nav-item">
                         <a class="navbar-brand" href="#">
@@ -39,13 +39,13 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Amenities</a>
+                        <a class="nav-link NavBarWords" href="#">Amenities</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link NavBarWords" href="#">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Reserve</a>
+                        <a class="nav-link NavBarWords" href="#">Reserve</a>
                     </li>
                 </ul>
             </div>
@@ -54,7 +54,14 @@
     <!--End NavBar-->
 
     <!--Header Image-->
-    <img id="HeaderImage" src="./Assets/header.jpg" alt="Header" width="1920" height="500px">
+    <div class="container-fluid" id="HeaderImage">
+        <div class="row">
+            <!-- <img src="./Assets/header.jpg" alt="Header"> -->
+            <div id="HeaderTextBox">
+                <h1 id="HeaderTitle">Run on the wheel of luxury</h1>
+            </div>
+        </div>
+    </div>
     <!--Header Image-->
     <br>
     <br>
@@ -87,7 +94,11 @@
     <!--End Hamsters Paradise-->
 
     <!--Start Rooms-->
-    <img id="RoomsPic" src="./Assets/bg2.jpg" alt="Back Ground" width="1920" height="738">
+    <div class="container-fluid" id="RoomsPic">
+        <div class="row">
+            <img src="./Assets/bg2.jpg" alt="Back Ground">
+        </div>
+    </div>
     <!--End Rooms-->
 
     <!--Start Packages-->
