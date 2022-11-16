@@ -3,6 +3,17 @@ Google Font CSS Call:
 font-family: 'Dosis', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
 */
+.container-fluid {
+  padding: 0;
+}
+
+.card {
+  border-radius: 0;
+}
+
+.card-img-top {
+  border-radius: 0;
+}
 
 /*NavBar Start*/
 .NavBar {
@@ -10,40 +21,37 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 .NavBarWords {
-  text-align: left;
   font: normal normal normal 20px/26px Dosis;
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
 }
 
+.NavBarWordReserve {
+  border: 2px solid #e5feff;
+}
+
 /*NavBar End*/
 
 /*Header Start*/
 #HeaderImage {
-  width: auto;
-  overflow: hidden;
-  display: block;
-  height: auto;
-  position: relative;
+  background-image: url("../Assets/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
-  margin-bottom: 109px;
-}
-
-#HeaderImage img {
-  margin-top: -325px;
-  margin-bottom: -250px;
+  padding: 8%;
 }
 
 #HeaderTextBox {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-left: 10%;
+  margin-right: 10%;
+  background: #000324;
+  opacity: 0.8;
+  padding: 5%;
 }
 
 #HeaderTitle {
-  text-align: center;
   font: normal normal normal 45px/57px Dosis;
   letter-spacing: 0px;
   color: #e5feff;
@@ -62,7 +70,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 /*HamterParadise Start*/
 #HamsterParadise {
-  margin-bottom: 91px;
+  margin-bottom: 5%;
 }
 
 #HamsterParadisePic {
@@ -102,30 +110,94 @@ font-family: 'Source Sans Pro', sans-serif;
 
 /*Rooms Start*/
 #RoomsPic {
-  width: auto;
-  overflow: hidden;
-  display: block;
-  height: auto;
-  margin-bottom: 106.5px;
+  background-image: url("../Assets/bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-bottom: 5%;
 }
 
-#RoomsPic img {
-  margin-top: -200px;
-  margin-bottom: -250px;
+#RoomsTitle {
+  text-align: center;
+  font: normal normal normal 35px/44px Dosis;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  padding-top: 50px;
 }
+
+#RoomCards {
+  margin-left: 13%;
+  margin-right: 13%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+}
+
+.RoomCardContent {
+  text-align: left;
+}
+
+.RoomCardTitle {
+  text-align: left;
+  font: normal normal normal 25px/32px Dosis;
+  letter-spacing: 0px;
+  color: #1a1b26;
+  opacity: 1;
+}
+
+.RoomCardAreaText {
+  text-align: left;
+  font: normal normal bold 16px/20px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #1a1b26;
+  opacity: 1;
+}
+
+.RoomCardList {
+  text-align: left;
+  font: normal normal normal 16px/20px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #1a1b26;
+  opacity: 1;
+}
+
+.RoomCardButton {
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 0;
+}
+
+.RoomCardButtons {
+  position: relative;
+  top: 8px;
+}
+
 /*Rooms End*/
 
 /*Packages Start*/
-#Packages {
-  margin-bottom: 95px;
-}
-
 #PackagesTitle {
   text-align: center;
   font: normal normal normal 35px/44px Dosis;
   letter-spacing: 0px;
   color: #1a1b26;
   opacity: 1;
+}
+
+#packageTopRow {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#packageMiddleRow {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#packageBottomRow {
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 #BeachWeddingPic {
@@ -214,17 +286,124 @@ font-family: 'Source Sans Pro', sans-serif;
 /*Packages End*/
 
 /*Amenities Start*/
+
 #Amenities {
-  margin-bottom: 101px;
+  background-image: url("../Assets/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10%;
+  margin-bottom: 8%;
+}
+
+#Amenities img {
+  margin-top: -325px;
+  margin-bottom: -345px;
+}
+
+#AmenitiesTitle {
+  font: normal normal normal 35px/44px Dosis;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#AmenitiesText {
+  font: normal normal normal 16px/20px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#AmenitiesIcons {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#AmenitiesIconText {
+  margin-left: 5%;
+  margin-right: 5%;
+  font: normal normal bold 20px/25px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  top: 90px;
 }
 /*Amenities End*/
 
 /*Reserve Start*/
-#Reserve {
-  margin-bottom: 101px;
+#ReserveARoom {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-image: url("../Assets/hamsterreserve.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-bottom: 30%;
+  margin-bottom: 8%;
+}
+
+#ReserveARoomUpper {
+  background-color: #000324;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#ReserveARoomTitle {
+  text-align: center;
+  font: normal normal normal 35px/44px Dosis;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+.ReserveBar {
+border-radius: 0;
+height: 35px;
+width: 150px;
+}
+
+.ReserveButton {
+  text-align: center;
+font: normal normal bold 20px/25px Source Sans Pro;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+border-radius: 0;
+height: 35px;
 }
 /*Reserve End*/
 
 /*Contact Start*/
+#Contact {
+  padding-top: 2%;
+  padding-bottom: 4%;
+  background-color: #000324;
+  text-align: center;
+}
+
+#Address {
+  font: normal normal normal 16px/20px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #e5feff;
+  opacity: 1;
+}
+
+#Trademark {
+  font: normal normal normal 16px/20px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #e5feff;
+  opacity: 1;
+}
 
 /*Contact End*/
