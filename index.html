@@ -16,41 +16,30 @@
 
 <body>
     <!--Start NavBar-->
-    <nav class="navbar navbar-expand-lg bg-light container-fluid">
+    <nav class="navbar navbar-expand-lg container-fluid">
         <div class="container-fluid NavBar">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link NavBarWords" aria-current="page" href="#">Overview</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link NavBarWords" href="#">Rooms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link NavBarWords" href="#">Packages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar-brand" href="#">
+                <div class="row">
+                    <div class="col-12 NavCol">
+                        <p class="NavBarWords" aria-current="page" href="#">Overview</p>
+                        <p class="NavBarWords" href="#">Rooms</p>
+                        <p class="NavBarWords" href="#">Packages</p>
+                        <p class="navbar-brand" href="#">
                             <img src="./Assets/Logo.png" alt="Logo" width="143" height="100">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link NavBarWords" href="#">Amenities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link NavBarWords" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link NavBarWords NavBarWordReserve" href="#">Reserve</a>
-                    </li>
-                </ul>
+                        </p>
+                        <p class="NavBarWords" href="#">Amenities</p>
+                        <p class="NavBarWords" href="#">Contact</p>
+                        <p class="NavBarWords NavBarWordReserve" href="#">Reserve</p>
+                    </div>
+                    </div>
             </div>
         </div>
     </nav>
+
     <!--End NavBar-->
 
     <!--Header Image-->
@@ -97,42 +86,38 @@
         <div id="RoomCards">
             <div class="card RoomCardContent" style="width: 22rem;">
                 <img src="./Assets/room1.jpg" class="card-img-top" alt="Queen Room">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title RoomCardTitle">Queen Room</h5>
                     <p class="card-text RoomCardAreaText">850 SQ FT room with city view</p>
-                        <p class="RoomCardList">• One queen size bed</p>
-                        <p class="RoomCardList">• Seed Bar, fireplace and large balcony</p>
-                        <p class="RoomCardList">• Small kitchen with a refrigerator and stove</p>
-                    <br>
-                    <br>
-                    <a href="#" class="btn btn-primary RoomCardButton RoomCardButtons">Reserve</a>
+                    <p class="RoomCardList">• One queen size bed</p>
+                    <p class="RoomCardList">• Seed Bar, fireplace and large balcony</p>
+                    <p class="RoomCardList">• Small kitchen with a refrigerator and stove</p>
+                    <a href="#" class="btn btn-primary RoomCardButton mt-auto">Reserve</a>
                 </div>
             </div>
 
             <div class="card RoomCardContent" style="width: 22rem;">
                 <img src="./Assets/room3.jpg" class="card-img-top" alt="King Room">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title RoomCardTitle">King Room</h5>
                     <p class="card-text RoomCardAreaText">950 SQ FT room with beach view</p>
-                        <p class="RoomCardList">• One king size bed</p>
-                        <p class="RoomCardList">• Seed Bar, fireplace and large balcony</p>
-                        <p class="RoomCardList">• Small kitchen with a refrigerator and stove</p>
-                    <br>
-                    <br>
-                    <a href="#" class="btn btn-primary RoomCardButton RoomCardButtons">Reserve</a>
+                    <p class="RoomCardList">• One king size bed</p>
+                    <p class="RoomCardList">• Seed Bar, fireplace and large balcony</p>
+                    <p class="RoomCardList">• Small kitchen with a refrigerator and stove</p>
+                    <a href="#" class="btn btn-primary RoomCardButton mt-auto">Reserve</a>
                 </div>
             </div>
 
             <div class="card RoomCardContent" style="width: 22rem;">
                 <img src="./Assets/room2.jpg" class="card-img-top" alt="Beach Side Suite">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column">
                     <h5 class="card-title RoomCardTitle">Beach Side Suite</h5>
                     <p class="card-text RoomCardAreaText">1500 SQ FT Suite with beach view</p>
-                        <p class="RoomCardList">• One California king size bed</p>
-                        <p class="RoomCardList">• Second room with fireplace, hot tub, and balcony</p>
-                        <p class="RoomCardList">• Seed Bar and coffee station</p>
-                        <p class="RoomCardList">• Full kitchen with a refrigerator, stove, and island</p>
-                    <a href="#" class="btn btn-primary RoomCardButton">Reserve</a>
+                    <p class="RoomCardList">• One California king size bed</p>
+                    <p class="RoomCardList">• Second room with fireplace, hot tub, and balcony</p>
+                    <p class="RoomCardList">• Seed Bar and coffee station</p>
+                    <p class="RoomCardList">• Full kitchen with a refrigerator, stove, and island</p>
+                    <a href="#" class="btn btn-primary RoomCardButton mt-auto">Reserve</a>
                 </div>
             </div>
         </div>
@@ -143,12 +128,12 @@
     <p id="PackagesTitle">Packages</p>
     <div id="packageTopRow" class="row">
         <div class="col-6">
-            <img id="BeachWeddingPic" src="./Assets/hamsterwedding.jpg" alt="Hamster Wedding" width="100%" height="75%">
+            <img id="PackagePic" src="./Assets/hamsterwedding.jpg" alt="Hamster Wedding">
         </div>
         <div class="col-6">
-            <p id="BeachWeddingTitle">Beach Wedding Package</p>
-            <p id="BeachWeddingPrice">Starting US $1,500.00</p>
-            <p id="BeachWeddingText">Feel the warmth of the beach as the flames in your hearts ignite during our
+            <p id="PackageTitle">Beach Wedding Package</p>
+            <p id="PackagePrice">Starting US $1,500.00</p>
+            <p id="PackageText">Feel the warmth of the beach as the flames in your hearts ignite during our
                 romantic beach side wedding. All wedding packages include catering, an open bar, and one tier wedding
                 cake (9" Vanilla standard cake). A private dinner for your closets family members and friends will be
                 provided after the ceremony.</p>
@@ -156,25 +141,25 @@
     </div>
     <div id="packageMiddleRow" class="row">
         <div class="col-6">
-            <p id="BeachWeddingTitle">Full Bloom Package</p>
-            <p id="BeachWeddingPrice">Starting US $1,500.00</p>
-            <p id="BeachWeddingText">Feel the warmth of the beach as the flames in your hearts ignite during our
+            <p id="PackageTitle">Full Bloom Package</p>
+            <p id="PackagePrice">Starting US $1,500.00</p>
+            <p id="PackageText">Feel the warmth of the beach as the flames in your hearts ignite during our
                 romantic beach side wedding. All wedding packages include catering, an open bar, and one tier wedding
                 cake (9" Vanilla standard cake). A private dinner for your closets family members and friends will be
                 provided after the ceremony.</p>
         </div>
         <div class="col-6">
-            <img id="BeachWeddingPic" src="./Assets/hamsterspring.jpg" alt="Hamster Wedding" width="100%" height="75%">
+            <img id="PackagePic" src="./Assets/hamsterspring.jpg" alt="Hamster Wedding">
         </div>
     </div>
     <div id="packageBottomRow" class="row">
         <div class="col-6">
-            <img id="BeachWeddingPic" src="./Assets/hamstercheese.jpg" alt="Hamster Wedding" width="100%" height="75%">
+            <img id="PackagePic" src="./Assets/hamstercheese.jpg" alt="Hamster Wedding">
         </div>
         <div class="col-6">
-            <p id="BeachWeddingTitle">Cheese and Seed Tour Package</p>
-            <p id="BeachWeddingPrice">Starting US $1,500.00</p>
-            <p id="BeachWeddingText">Feel the warmth of the beach as the flames in your hearts ignite during our
+            <p id="PackageTitle">Cheese and Seed Tour Package</p>
+            <p id="PackagePrice">Starting US $1,500.00</p>
+            <p id="PackageText">Feel the warmth of the beach as the flames in your hearts ignite during our
                 romantic beach side wedding. All wedding packages include catering, an open bar, and one tier wedding
                 cake (9" Vanilla standard cake). A private dinner for your closets family members and friends will be
                 provided after the ceremony.</p>
@@ -201,16 +186,16 @@
         <br>
         <div id="AmenitiesIcons" class="row">
             <div class="col-3">
-                <img id="AmenitiesIcon1" src="./Assets/24hour.png" alt="24Hr" width="150px" height="101px">
+                <img src="./Assets/24hour.png" alt="24Hr" width="150px" height="101px">
             </div>
             <div class="col-3">
-                <img id="AmenitiesIcon2" src="./Assets/breakfast.png" alt="breakfast" width="150px" height="104px">
+                <img src="./Assets/breakfast.png" alt="breakfast" width="150px" height="104px">
             </div>
             <div class="col-3">
-                <img id="AmenitiesIcon3" src="./Assets/valet.png" alt="valet" width="100px" height="115px">
+                <img src="./Assets/valet.png" alt="valet" width="100px" height="115px">
             </div>
             <div class="col-3">
-                <img id="AmenitiesIcon4" src="./Assets/pool.png" alt="pool" width="155px" height="110px">
+                <img src="./Assets/pool.png" alt="pool" width="155px" height="110px">
             </div>
 
         </div>
@@ -234,17 +219,42 @@
     <!--Start Reserve-->
     <div id="ReserveARoom">
         <div id="ReserveARoomUpper">
-<h1 id="ReserveARoomTitle">Room a Room</h1>
-<div class="row">
-    <form class="d-flex" role="search">
-        <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
-        <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
-        <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
-        <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
-        <button class="btn btn-primary ReserveButton" type="submit">Check Availability</button>
-      </form>
-</div>
-</div>
+            <h1 id="ReserveARoomTitle">Room a Room</h1>
+            <div id="ReserveRow" class="row">
+                <div class="col-2">
+                    <p class="ReserveLabel">Check In</p>
+                </div>
+                <div class="col-2">
+                    <p class="ReserveLabel">Check out</p>
+                </div>
+                <div class="col-2">
+                    <p class="ReserveLabel">Number of Guests</p>
+                </div>
+                <div class="col-2">
+                    <p class="ReserveLabel">Room Type</p>
+                </div>
+                <div class="col-2">
+                    <p></p>
+                </div>
+            </div>
+            <div id="ReserveRow" class="row">
+                <div class="col-2">
+                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
+                </div>
+                <div class="col-2">
+                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
+                </div>
+                <div class="col-2">
+                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
+                </div>
+                <div class="col-2">
+                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-primary ReserveButton" type="submit">Check Availability</button>
+                </div>
+            </div>
+        </div>
     </div>
     <!--End Reserve-->
 

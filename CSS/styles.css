@@ -20,6 +20,9 @@ font-family: 'Source Sans Pro', sans-serif;
   background-color: #000324;
 }
 
+.NavCol {
+}
+
 .NavBarWords {
   font: normal normal normal 20px/26px Dosis;
   letter-spacing: 0px;
@@ -164,14 +167,8 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 .RoomCardButton {
-  padding-left: 30px;
-  padding-right: 30px;
   border-radius: 0;
-}
-
-.RoomCardButtons {
-  position: relative;
-  top: 8px;
+  margin-right: 50%;
 }
 
 /*Rooms End*/
@@ -198,13 +195,15 @@ font-family: 'Source Sans Pro', sans-serif;
 #packageBottomRow {
   margin-left: 20%;
   margin-right: 20%;
+  margin-bottom: 5%;
 }
 
-#BeachWeddingPic {
-  float: right;
+#PackagePic {
+  width: 100%;
+  height: 200px;
 }
 
-#BeachWeddingTitle {
+#PackageTitle {
   text-align: left;
   font: normal normal normal 25px/32px Dosis;
   letter-spacing: 0px;
@@ -212,7 +211,7 @@ font-family: 'Source Sans Pro', sans-serif;
   opacity: 1;
 }
 
-#BeachWeddingPrice {
+#PackagePrice {
   text-align: left;
   font: normal normal normal 16px/20px Source Sans Pro;
   letter-spacing: 0px;
@@ -220,63 +219,7 @@ font-family: 'Source Sans Pro', sans-serif;
   opacity: 1;
 }
 
-#BeachWeddingText {
-  text-align: left;
-  font: normal normal normal 16px/20px Source Sans Pro;
-  letter-spacing: 0px;
-  color: #1a1b26;
-  opacity: 1;
-}
-
-#FullBloomPic {
-  float: right;
-}
-
-#FullBloomTitle {
-  text-align: left;
-  font: normal normal normal 25px/32px Dosis;
-  letter-spacing: 0px;
-  color: #1a1b26;
-  opacity: 1;
-}
-
-#FullBloomPrice {
-  text-align: left;
-  font: normal normal normal 16px/20px Source Sans Pro;
-  letter-spacing: 0px;
-  color: #1f51a8;
-  opacity: 1;
-}
-
-#FullBloomText {
-  text-align: left;
-  font: normal normal normal 16px/20px Source Sans Pro;
-  letter-spacing: 0px;
-  color: #1a1b26;
-  opacity: 1;
-}
-
-#CheeseAndSeedTourPic {
-  float: right;
-}
-
-#CheeseAndSeedTourTitle {
-  text-align: left;
-  font: normal normal normal 25px/32px Dosis;
-  letter-spacing: 0px;
-  color: #1a1b26;
-  opacity: 1;
-}
-
-#CheeseAndSeedTourPrice {
-  text-align: left;
-  font: normal normal normal 16px/20px Source Sans Pro;
-  letter-spacing: 0px;
-  color: #1f51a8;
-  opacity: 1;
-}
-
-#CheeseAndSeedTourText {
+#PackageText {
   text-align: left;
   font: normal normal normal 16px/20px Source Sans Pro;
   letter-spacing: 0px;
@@ -290,14 +233,12 @@ font-family: 'Source Sans Pro', sans-serif;
 #Amenities {
   background-image: url("../Assets/bg.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  padding: 10%;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 10%;
   margin-bottom: 8%;
-}
-
-#Amenities img {
-  margin-top: -325px;
-  margin-bottom: -345px;
 }
 
 #AmenitiesTitle {
@@ -322,8 +263,8 @@ font-family: 'Source Sans Pro', sans-serif;
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
 #AmenitiesIconText {
@@ -334,9 +275,9 @@ font-family: 'Source Sans Pro', sans-serif;
   color: #ffffff;
   opacity: 1;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  text-align: center;
   position: relative;
-  top: 90px;
 }
 /*Amenities End*/
 
@@ -367,20 +308,36 @@ font-family: 'Source Sans Pro', sans-serif;
   opacity: 1;
 }
 
+#ReserveRow {
+  margin-left: 3%;
+  margin-right: 3%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .ReserveBar {
-border-radius: 0;
-height: 35px;
-width: 150px;
+  border-radius: 0;
+  height: 30px;
+  width: 150px;
 }
 
 .ReserveButton {
   text-align: center;
-font: normal normal bold 20px/25px Source Sans Pro;
+  font: normal normal bold 15px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  border-radius: 0;
+  height: 30px;
+  width: 150px;
+}
+
+.ReserveLabel {
+  text-align: left;
+font: normal normal normal 15px Source Sans Pro;
 letter-spacing: 0px;
-color: #FFFFFF;
+color: #E5FEFF;
 opacity: 1;
-border-radius: 0;
-height: 35px;
 }
 /*Reserve End*/
 
