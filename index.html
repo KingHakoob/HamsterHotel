@@ -16,30 +16,77 @@
 
 <body>
     <!--Start NavBar-->
-    <nav class="navbar navbar-expand-lg container-fluid">
-        <div class="container-fluid NavBar">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <div class="row">
-                    <div class="col-12 NavCol">
-                        <p class="NavBarWords" aria-current="page" href="#">Overview</p>
-                        <p class="NavBarWords" href="#">Rooms</p>
-                        <p class="NavBarWords" href="#">Packages</p>
-                        <p class="navbar-brand" href="#">
+    <!--Lg Nav-->
+    <div class="d-none d-lg-block">
+        <nav class="navbar navbar-expand-lg container-fluid">
+            <div class="container-fluid NavBar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav NavBarLg">
+                        <li class="nav-item">
+                            <a class="nav-link NavBarWords" aria-current="page" href="#HamsterParadise">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link NavBarWords" href="#RoomsPic">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link NavBarWords" href="#PackagesTitle">Packages</a>
+                        </li>
+                        <li class="nav-item">
                             <img src="./Assets/Logo.png" alt="Logo" width="143" height="100">
-                        </p>
-                        <p class="NavBarWords" href="#">Amenities</p>
-                        <p class="NavBarWords" href="#">Contact</p>
-                        <p class="NavBarWords NavBarWordReserve" href="#">Reserve</p>
-                    </div>
-                    </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link NavBarWords" href="#Amenities">Amenities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link NavBarWords" href="#Contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link NavBarWords" href="#ReserveARoom">Reserve</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-
+        </nav>
+    </div>
+    <!--Lg Nav-->
+    <!--Sm Nav-->
+    <div class="d-lg-none">
+        <nav class="navbar navbar-expand-lg container-fluid">
+            <div class="container-fluid NavBar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav NavBarSm">
+                        <li class="nav-item">
+                            <a class="nav-link NavBarWords" aria-current="page" href="#HamsterParadise">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link NavBarWords" href="#RoomsPic">Rooms</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link NavBarWords" href="#PackagesTitle">Packages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link NavBarWords" href="#Amenities">Amenities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link NavBarWords" href="#Contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link NavBarWords" href="#ReserveARoom">Reserve</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Sm Nav-->
     <!--End NavBar-->
 
     <!--Header Image-->
@@ -58,7 +105,7 @@
         <div class="col-5">
             <img id="HamsterParadisePic" src="./Assets/hamsterhomejpg.jpg" alt="Hamster Home" width="369" height="416">
         </div>
-        <div class="col-7">
+        <div id="HamsterParadiseTextArea" class="col-md-12 col-lg-7">
             <p id="HamsterParadiseTitle">Welcome to a hamster's paradise</p>
             <p id="HamsterParadiseText">Nestled in the heart of Cavia California, La Petite Maison is a luxury hotel
                 designed for the small mammal with extravagance in mind. Escape to the warm comforts of stunning rooms,
@@ -68,13 +115,11 @@
                 enjoy the rich accommodations along with our unmatched luxury. Discover the satisfaction of indulging in
                 our quality rooms, and thank you for choosing La Petite Maison.
             </p>
-            <div>
-                <img id="HamsterParadiseIcon1" src="./Assets/awardfinest.png" alt="Finest Award" width="200"
-                    height="153">
-                <img id="HamsterParadiseIcon1" src="./Assets/awardsatisfaction.png" alt="Satisfaction Award" width="200"
-                    height="193">
-                <img id="HamsterParadiseIcon1" src="./Assets/awardgenuine.png" alt="Genuine Award" width="200"
-                    height="175">
+            <div id="HamsterParadiseIconDiv">
+                <!-- width="200" height="153" width="200" height="193" width="200" height="175" -->
+                <img class="HamsterParadiseIcon" src="./Assets/awardfinest.png" alt="Finest Award">
+                <img class="HamsterParadiseIcon" src="./Assets/awardsatisfaction.png" alt="Satisfaction Award">
+                <img class="HamsterParadiseIcon" src="./Assets/awardgenuine.png" alt="Genuine Award">
             </div>
         </div>
     </div>
@@ -83,54 +128,108 @@
     <!--Start Rooms-->
     <div class="container-fluid" id="RoomsPic">
         <h1 id="RoomsTitle">Our Rooms</h1>
-        <div id="RoomCards">
-            <div class="card RoomCardContent" style="width: 22rem;">
-                <img src="./Assets/room1.jpg" class="card-img-top" alt="Queen Room">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title RoomCardTitle">Queen Room</h5>
-                    <p class="card-text RoomCardAreaText">850 SQ FT room with city view</p>
-                    <p class="RoomCardList">• One queen size bed</p>
-                    <p class="RoomCardList">• Seed Bar, fireplace and large balcony</p>
-                    <p class="RoomCardList">• Small kitchen with a refrigerator and stove</p>
-                    <a href="#" class="btn btn-primary RoomCardButton mt-auto">Reserve</a>
+        <!--Lg Cards-->
+        <div id="RoomCards" class="d-none d-lg-block">
+            <div id="RoomCardsRow" class="row">
+                <div class="col-4">
+                    <div class="card RoomCardContent" style="width: 22rem;">
+                        <img src="./Assets/room1.jpg" class="card-img-top" alt="Queen Room">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title RoomCardTitle">Queen Room</h5>
+                            <p class="card-text RoomCardAreaText">850 SQ FT room with city view</p>
+                            <p class="RoomCardList">• One queen size bed</p>
+                            <p class="RoomCardList">• Seed Bar, fireplace and large balcony</p>
+                            <p class="RoomCardList">• Small kitchen with a refrigerator and stove</p>
+                            <a href="#" class="btn btn-primary RoomCardButton">Reserve</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="card RoomCardContent" style="width: 22rem;">
-                <img src="./Assets/room3.jpg" class="card-img-top" alt="King Room">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title RoomCardTitle">King Room</h5>
-                    <p class="card-text RoomCardAreaText">950 SQ FT room with beach view</p>
-                    <p class="RoomCardList">• One king size bed</p>
-                    <p class="RoomCardList">• Seed Bar, fireplace and large balcony</p>
-                    <p class="RoomCardList">• Small kitchen with a refrigerator and stove</p>
-                    <a href="#" class="btn btn-primary RoomCardButton mt-auto">Reserve</a>
+                <div class="col-4">
+                    <div class="card RoomCardContent" style="width: 22rem;">
+                        <img src="./Assets/room3.jpg" class="card-img-top" alt="King Room">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title RoomCardTitle">King Room</h5>
+                            <p class="card-text RoomCardAreaText">950 SQ FT room with beach view</p>
+                            <p class="RoomCardList">• One king size bed</p>
+                            <p class="RoomCardList">• Seed Bar, fireplace and large balcony</p>
+                            <p class="RoomCardList">• Small kitchen with a refrigerator and stove</p>
+                            <a href="#" class="btn btn-primary RoomCardButton">Reserve</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="card RoomCardContent" style="width: 22rem;">
-                <img src="./Assets/room2.jpg" class="card-img-top" alt="Beach Side Suite">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title RoomCardTitle">Beach Side Suite</h5>
-                    <p class="card-text RoomCardAreaText">1500 SQ FT Suite with beach view</p>
-                    <p class="RoomCardList">• One California king size bed</p>
-                    <p class="RoomCardList">• Second room with fireplace, hot tub, and balcony</p>
-                    <p class="RoomCardList">• Seed Bar and coffee station</p>
-                    <p class="RoomCardList">• Full kitchen with a refrigerator, stove, and island</p>
-                    <a href="#" class="btn btn-primary RoomCardButton mt-auto">Reserve</a>
+                <div class="col-4">
+                    <div class="card RoomCardContent" style="width: 22rem;">
+                        <img src="./Assets/room2.jpg" class="card-img-top" alt="Beach Side Suite">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title RoomCardTitle">Beach Side Suite</h5>
+                            <p class="card-text RoomCardAreaText">1500 SQ FT Suite with beach view</p>
+                            <p class="RoomCardList">• One California king size bed</p>
+                            <p class="RoomCardList">• Second room with fireplace, hot tub, and balcony</p>
+                            <p class="RoomCardList">• Seed Bar and coffee station</p>
+                            <p class="RoomCardList">• Full kitchen with a refrigerator, stove, and island</p>
+                            <a href="#" class="btn btn-primary RoomCardButton">Reserve</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!--Lg Cards-->
+        <!--Sm Cards-->
+        <div id="RoomCards" class="d-lg-none">
+            <div class="row">
+                <div class="col-12 RoomCardSm">
+                    <div class="card RoomCardContent" style="width: 15rem;">
+                        <img src="./Assets/room1.jpg" class="card-img-top" alt="Queen Room">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title RoomCardTitle">Queen Room</h5>
+                            <p class="card-text RoomCardAreaText">850 SQ FT room with city view</p>
+                            <p class="RoomCardList">• One queen size bed</p>
+                            <p class="RoomCardList">• Seed Bar, fireplace and large balcony</p>
+                            <p class="RoomCardList">• Small kitchen with a refrigerator and stove</p>
+                            <a href="#" class="btn btn-primary RoomCardButton mt-auto">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 RoomCardSm">
+                    <div class="card RoomCardContent" style="width: 15rem;">
+                        <img src="./Assets/room3.jpg" class="card-img-top" alt="King Room">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title RoomCardTitle">King Room</h5>
+                            <p class="card-text RoomCardAreaText">950 SQ FT room with beach view</p>
+                            <p class="RoomCardList">• One king size bed</p>
+                            <p class="RoomCardList">• Seed Bar, fireplace and large balcony</p>
+                            <p class="RoomCardList">• Small kitchen with a refrigerator and stove</p>
+                            <a href="#" class="btn btn-primary RoomCardButton mt-auto">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 RoomCardSm">
+                    <div class="card RoomCardContent" style="width: 15rem;">
+                        <img src="./Assets/room2.jpg" class="card-img-top" alt="Beach Side Suite">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title RoomCardTitle">Beach Side Suite</h5>
+                            <p class="card-text RoomCardAreaText">1500 SQ FT Suite with beach view</p>
+                            <p class="RoomCardList">• One California king size bed</p>
+                            <p class="RoomCardList">• Second room with fireplace, hot tub, and balcony</p>
+                            <p class="RoomCardList">• Seed Bar and coffee station</p>
+                            <p class="RoomCardList">• Full kitchen with a refrigerator, stove, and island</p>
+                            <a href="#" class="btn btn-primary RoomCardButton mt-auto">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Sm Cards-->
     </div>
     <!--End Rooms-->
 
     <!--Start Packages-->
     <p id="PackagesTitle">Packages</p>
     <div id="packageTopRow" class="row">
-        <div class="col-6">
+        <div class="col-md-12 col-lg-6">
             <img id="PackagePic" src="./Assets/hamsterwedding.jpg" alt="Hamster Wedding">
         </div>
-        <div class="col-6">
+        <div class="col-md-12 col-lg-6">
             <p id="PackageTitle">Beach Wedding Package</p>
             <p id="PackagePrice">Starting US $1,500.00</p>
             <p id="PackageText">Feel the warmth of the beach as the flames in your hearts ignite during our
@@ -140,7 +239,7 @@
         </div>
     </div>
     <div id="packageMiddleRow" class="row">
-        <div class="col-6">
+        <div class="col-md-12 col-lg-6">
             <p id="PackageTitle">Full Bloom Package</p>
             <p id="PackagePrice">Starting US $1,500.00</p>
             <p id="PackageText">Feel the warmth of the beach as the flames in your hearts ignite during our
@@ -148,15 +247,15 @@
                 cake (9" Vanilla standard cake). A private dinner for your closets family members and friends will be
                 provided after the ceremony.</p>
         </div>
-        <div class="col-6">
+        <div class="col-md-12 col-lg-6">
             <img id="PackagePic" src="./Assets/hamsterspring.jpg" alt="Hamster Wedding">
         </div>
     </div>
     <div id="packageBottomRow" class="row">
-        <div class="col-6">
+        <div class="col-md-12 col-lg-6">
             <img id="PackagePic" src="./Assets/hamstercheese.jpg" alt="Hamster Wedding">
         </div>
-        <div class="col-6">
+        <div class="col-md-12 col-lg-6">
             <p id="PackageTitle">Cheese and Seed Tour Package</p>
             <p id="PackagePrice">Starting US $1,500.00</p>
             <p id="PackageText">Feel the warmth of the beach as the flames in your hearts ignite during our
@@ -168,7 +267,7 @@
     <!--End Packages-->
 
     <!--Start Amenities-->
-    <div class="container-fluid" id="Amenities">
+    <div class="container-fluid d-none d-lg-block" id="Amenities">
         <div class="row">
             <div id="AmenitiesTitle" class="col-12">
                 <h1>Amenities</h1>
@@ -186,16 +285,16 @@
         <br>
         <div id="AmenitiesIcons" class="row">
             <div class="col-3">
-                <img src="./Assets/24hour.png" alt="24Hr" width="150px" height="101px">
+                <img src="./Assets/24hour.png" alt="24Hr" width="140px" height="91px">
             </div>
             <div class="col-3">
-                <img src="./Assets/breakfast.png" alt="breakfast" width="150px" height="104px">
+                <img src="./Assets/breakfast.png" alt="breakfast" width="140px" height="94px">
             </div>
             <div class="col-3">
-                <img src="./Assets/valet.png" alt="valet" width="100px" height="115px">
+                <img src="./Assets/valet.png" alt="valet" width="90px" height="105px">
             </div>
             <div class="col-3">
-                <img src="./Assets/pool.png" alt="pool" width="155px" height="110px">
+                <img src="./Assets/pool.png" alt="pool" width="145px" height="100px">
             </div>
 
         </div>
@@ -217,7 +316,8 @@
     <!--End Amenities-->
 
     <!--Start Reserve-->
-    <div id="ReserveARoom">
+    <!--Lg Reserve-->
+    <div id="ReserveARoom" class="d-none d-lg-block">
         <div id="ReserveARoomUpper">
             <h1 id="ReserveARoomTitle">Room a Room</h1>
             <div id="ReserveRow" class="row">
@@ -256,6 +356,49 @@
             </div>
         </div>
     </div>
+    <!--Lg Reserve-->
+    <!--Sm Reserve-->
+    <div id="ReserveARoom" class="d-lg-none">
+        <div id="ReserveARoomUpper">
+            <h1 id="ReserveARoomTitle">Room a Room</h1>
+            <div id="ReserveRow" class="row">
+                <div class="col-2">
+                    <p class="ReserveLabel">Check In</p>
+                </div>
+                <div class="col-2">
+                    <p class="ReserveLabel">Check out</p>
+                </div>
+                <div class="col-2">
+                    <p class="ReserveLabel">Number of Guests</p>
+                </div>
+                <div class="col-2">
+                    <p class="ReserveLabel">Room Type</p>
+                </div>
+                <div class="col-2">
+                    <p></p>
+                </div>
+            </div>
+            <div id="ReserveRow" class="row">
+                <div class="col-2">
+                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
+                </div>
+                <div class="col-2">
+                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
+                </div>
+                <div class="col-2">
+                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
+                </div>
+                <div class="col-2">
+                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-primary ReserveButton" type="submit">Check Availability</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sm Reserve-->
+
     <!--End Reserve-->
 
     <!--Start Contact-->
