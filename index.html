@@ -131,7 +131,7 @@
         <!--Lg Cards-->
         <div id="RoomCards" class="d-none d-lg-block">
             <div id="RoomCardsRow" class="row">
-                <div class="col-4">
+                <div class="col-4 d-flex align-items-stretch">
                     <div class="card RoomCardContent" style="width: 22rem;">
                         <img src="./Assets/room1.jpg" class="card-img-top" alt="Queen Room">
                         <div class="card-body d-flex flex-column">
@@ -144,7 +144,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 d-flex align-items-stretch">
                     <div class="card RoomCardContent" style="width: 22rem;">
                         <img src="./Assets/room3.jpg" class="card-img-top" alt="King Room">
                         <div class="card-body d-flex flex-column">
@@ -157,7 +157,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 d-flex align-items-stretch">
                     <div class="card RoomCardContent" style="width: 22rem;">
                         <img src="./Assets/room2.jpg" class="card-img-top" alt="Beach Side Suite">
                         <div class="card-body d-flex flex-column">
@@ -267,7 +267,7 @@
     <!--End Packages-->
 
     <!--Start Amenities-->
-    <div class="container-fluid d-none d-lg-block" id="Amenities">
+    <div class="container-fluid" id="Amenities">
         <div class="row">
             <div id="AmenitiesTitle" class="col-12">
                 <h1>Amenities</h1>
@@ -285,16 +285,16 @@
         <br>
         <div id="AmenitiesIcons" class="row">
             <div class="col-3">
-                <img src="./Assets/24hour.png" alt="24Hr" width="140px" height="91px">
+                <img id="AmenitiesIcon1" src="./Assets/24hour.png" alt="24Hr">
             </div>
             <div class="col-3">
-                <img src="./Assets/breakfast.png" alt="breakfast" width="140px" height="94px">
+                <img id="AmenitiesIcon2" src="./Assets/breakfast.png" alt="breakfast">
             </div>
             <div class="col-3">
-                <img src="./Assets/valet.png" alt="valet" width="90px" height="105px">
+                <img id="AmenitiesIcon3" src="./Assets/valet.png" alt="valet">
             </div>
             <div class="col-3">
-                <img src="./Assets/pool.png" alt="pool" width="145px" height="100px">
+                <img id="AmenitiesIcon4" src="./Assets/pool.png" alt="pool">
             </div>
 
         </div>
@@ -319,7 +319,7 @@
     <!--Lg Reserve-->
     <div id="ReserveARoom" class="d-none d-lg-block">
         <div id="ReserveARoomUpper">
-            <h1 id="ReserveARoomTitle">Room a Room</h1>
+            <h1 id="ReserveARoomTitle">Reserve a Room</h1>
             <div id="ReserveRow" class="row">
                 <div class="col-2">
                     <p class="ReserveLabel">Check In</p>
@@ -358,40 +358,35 @@
     </div>
     <!--Lg Reserve-->
     <!--Sm Reserve-->
-    <div id="ReserveARoom" class="d-lg-none">
-        <div id="ReserveARoomUpper">
-            <h1 id="ReserveARoomTitle">Room a Room</h1>
-            <div id="ReserveRow" class="row">
-                <div class="col-2">
+    <div id="ReserveARoomSm" class="d-lg-none">
+        <div id="ReserveARoomUpperSm">
+            <h1 id="ReserveARoomTitle">Reserve a Room</h1>
+            <div class="row">
+                <div class="col-12 ReserveARoomCol">
                     <p class="ReserveLabel">Check In</p>
                 </div>
-                <div class="col-2">
+                <div class="col-12 ReserveARoomCol">
+                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
+                </div>
+                <div class="col-12 ReserveARoomCol">
                     <p class="ReserveLabel">Check out</p>
                 </div>
-                <div class="col-2">
+                <div class="col-12 ReserveARoomCol">
+                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
+                </div>
+                <div class="col-12 ReserveARoomCol">
                     <p class="ReserveLabel">Number of Guests</p>
                 </div>
-                <div class="col-2">
+                <div class="col-12 ReserveARoomCol">
+                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
+                </div>
+                <div class="col-12 ReserveARoomCol">
                     <p class="ReserveLabel">Room Type</p>
                 </div>
-                <div class="col-2">
-                    <p></p>
-                </div>
-            </div>
-            <div id="ReserveRow" class="row">
-                <div class="col-2">
+                <div class="col-12 ReserveARoomCol">
                     <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
                 </div>
-                <div class="col-2">
-                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
-                </div>
-                <div class="col-2">
-                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
-                </div>
-                <div class="col-2">
-                    <input class="form-control me-2 ReserveBar" type="search" aria-label="Search">
-                </div>
-                <div class="col-2">
+                <div class="col-12 ReserveARoomCol">
                     <button class="btn btn-primary ReserveButton" type="submit">Check Availability</button>
                 </div>
             </div>

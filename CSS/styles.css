@@ -1,8 +1,3 @@
-/*
-Google Font CSS Call:
-font-family: 'Dosis', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;
-*/
 .container-fluid {
   padding: 0;
 }
@@ -296,6 +291,27 @@ font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
   position: relative;
 }
+
+#AmenitiesIcon1 {
+  width: 140px;
+  height: 91px;
+}
+
+#AmenitiesIcon2 {
+  width: 140px;
+  height: 94px;
+}
+
+#AmenitiesIcon3 {
+  width: 90px;
+  height: 105px;
+}
+
+#AmenitiesIcon4 {
+  width: 145px;
+  height: 100px;
+}
+
 /*Amenities End*/
 
 /*Reserve Start*/
@@ -311,7 +327,27 @@ font-family: 'Source Sans Pro', sans-serif;
   margin-bottom: 8%;
 }
 
+#ReserveARoomSm {
+  margin-left: 20%;
+  margin-right: 20%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 10%;
+}
+
+.ReserveARoomCol {
+  display: flex;
+  justify-content: center;
+}
+
 #ReserveARoomUpper {
+  background-color: #000324;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#ReserveARoomUpperSm {
   background-color: #000324;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -351,10 +387,10 @@ font-family: 'Source Sans Pro', sans-serif;
 
 .ReserveLabel {
   text-align: left;
-font: normal normal normal 15px Source Sans Pro;
-letter-spacing: 0px;
-color: #E5FEFF;
-opacity: 1;
+  font: normal normal normal 15px Source Sans Pro;
+  letter-spacing: 0px;
+  color: #e5feff;
+  opacity: 1;
 }
 /*Reserve End*/
 
@@ -383,14 +419,13 @@ opacity: 1;
 /*Contact End*/
 
 @media screen and (max-width: 991px) {
-
   #HeaderTitle {
-    font: normal normal normal 16px Dosis;
+    font: normal normal normal 20px Dosis;
     letter-spacing: 0px;
     color: #e5feff;
     opacity: 1;
   }
-  
+
   #HeaderText {
     text-align: center;
     font: normal normal normal 10px Source Sans Pro;
@@ -408,7 +443,7 @@ opacity: 1;
     margin-left: 3%;
     margin-right: 3%;
   }
-  
+
   #HamsterParadiseText {
     text-align: center;
     margin-left: 15%;
@@ -435,7 +470,7 @@ opacity: 1;
     margin-right: 10%;
     text-align: center;
   }
-  
+
   #packageMiddleRow {
     display: flex;
     flex-direction: column-reverse;
@@ -443,7 +478,7 @@ opacity: 1;
     margin-left: 10%;
     margin-right: 10%;
   }
-  
+
   #packageBottomRow {
     text-align: center;
     margin-left: 10%;
@@ -453,11 +488,11 @@ opacity: 1;
   #PackageTitle {
     text-align: center;
   }
-  
+
   #PackagePrice {
     text-align: center;
   }
-  
+
   #PackageText {
     text-align: center;
   }
@@ -468,7 +503,7 @@ opacity: 1;
     color: #e5feff;
     opacity: 1;
   }
-  
+
   #Trademark {
     font: normal normal normal 14px Source Sans Pro;
     letter-spacing: 0px;
@@ -476,8 +511,33 @@ opacity: 1;
     opacity: 1;
   }
 
-  #ReserveARoom {
-    background-image: none;
+  .ReserveButton {
+    margin-top: 3%;
+    position: relative;
+    left: -5px;
+  }
+
+  #AmenitiesIcon1 {
+    width: 75%;
+    height: 50%;
+  }
+  
+  #AmenitiesIcon2 {
+    width: 75%;
+    height: 60%;
+  }
+  
+  #AmenitiesIcon3 {
+    width: 75%;
+    height: 60%;
+  }
+  
+  #AmenitiesIcon4 {
+    width: 75%;
+    height: 50%;
+  }
+  #AmenitiesIconText {
+    font-size: 15px;
   }
 
 }
